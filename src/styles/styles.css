@@ -1,0 +1,160 @@
+* {
+  --black-russian: #1d1d1f;
+  --lochmara: #0095D0;
+  --purple-heart: #4a33c1;
+  --cardinal: #b7283b;
+  --flamingo: #e45d50;
+  --java: #19998e;
+  --green: #13850d;
+  --activity-accent: #359048;
+  --cosmic: #2d4379;
+  --navy: #0255fb;
+  --amaranth: #fa2d48;
+  --series-3-accent: #fb6638;
+  --goldenrod: #c67804;
+  --bands-accent: #d61739;
+  --brick: #ad1f1f;
+  --sk-6-background: #fafafa;
+  --black: #000000;
+  --white: #ffffff;
+  --smoke: #696969;
+  --activity-bg: #eefbf3;
+  --ghost: #f5f5f7;
+  --gainsboro: #c7c5c6;
+  --snow: #fff4f4;
+  --cyan: #05ece0;
+  --aqua: #158D89;
+  --lightgreen: #EEFBF3;
+  --lavender-blush: #fff8ee;
+  --alice-blue: #f0fbff;
+  --swans-down: #d1eed9;
+  --chateau: #edf9ff;
+  --twilight: #fff4f8;
+  --series-3-bg: #fef8f4;
+  --stark: #fff8ed;
+  --liver: #fff7f7;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body .Home-container {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body .Home-container .Banner-container {
+  display: flex;
+  flex-direction: column;
+}
+body .Home-container .Banner-container .Banner-container__videoHero {
+  width: 70%;
+  margin: 0 auto;
+}
+body .Home-container .Banner-container .Banner-container__logoHero {
+  width: 10rem;
+  margin: 0 auto;
+}
+body .Home-container__title {
+  width: 100%;
+  font-size: 48px;
+  border: 1px solid red;
+}
+body .Home-container__subtitle {
+  color: var(--smoke);
+  font-size: 20px;
+  width: 70%;
+  font-weight: 700;
+  margin: 0 auto;
+}
+body .Home-container .CartHorizontal-container {
+  width: 100%;
+  background-color: var(--lightgreen);
+  height: 50vh;
+  max-height: 400px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box {
+  display: flex;
+  justify-content: space-between;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: start;
+  margin: auto 1rem;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .title span {
+  color: var(--activity-accent);
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .main-article2 {
+  width: 50%;
+  max-width: 300px;
+  height: 50vh;
+  max-height: 400px;
+  position: relative;
+  background-image: url(../media/activity_watch_hw__f42hdrx2vnqm_large.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .main-article2 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .main-article2 div video {
+  width: 60%;
+  min-width: 150px;
+  z-index: 2;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2 {
+  position: relative;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2 div {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 5;
+  border-radius: 50px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2 div svg {
+  color: red;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box3 {
+  background-color: #13850d;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  height: 50vh;
+  width: 100%;
+  max-height: 400px;
+  border-radius: 40px;
+  font-size: 18px;
+  color: var(--activity-bg);
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box3 h3 {
+  margin: 10px 5%;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box3 p {
+  width: 60%;
+  margin: 0 5%;
+}/*# sourceMappingURL=styles.css.map */
