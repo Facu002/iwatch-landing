@@ -82,23 +82,23 @@ body .Home-container .CartHorizontal-container .CartHorizontal-container__box {
   display: flex;
   justify-content: space-between;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box1-container {
   display: flex;
   width: 80%;
   max-width: 800px;
   justify-content: space-between;
   align-items: center;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .title {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box1-container__title {
   font-size: 30px;
   font-weight: bolder;
   text-align: start;
   margin: auto 1rem;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .title span {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box1-container__title span {
   color: var(--activity-accent);
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .main-article2 {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box1-container__video-container {
   width: 50%;
   max-width: 300px;
   height: 50vh;
@@ -108,22 +108,22 @@ body .Home-container .CartHorizontal-container .CartHorizontal-container__box .b
   background-size: cover;
   background-position: center;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .main-article2 div {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box1-container__video-container div {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box .main-article2 div video {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box1-container__video-container div .box1-container__video {
   width: 60%;
   min-width: 150px;
   z-index: 2;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2 {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2-container {
   position: relative;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2 div {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2-container__btn {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
@@ -133,11 +133,22 @@ body .Home-container .CartHorizontal-container .CartHorizontal-container__box .b
   cursor: pointer;
   background-color: transparent;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box2 div svg {
-  color: red;
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .overlayAnimation-enter {
+  opacity: 0;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box3 {
-  background-color: #13850d;
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .overlayAnimation-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .overlayAnimation-exit {
+  opacity: 1;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .overlayAnimation-exit-active {
+  opacity: 0;
+  transition: opacity 1s;
+}
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .overlaybox-container {
+  background-color: var(--activity-accent);
   z-index: 2;
   position: absolute;
   display: flex;
@@ -151,10 +162,10 @@ body .Home-container .CartHorizontal-container .CartHorizontal-container__box .b
   font-size: 18px;
   color: var(--activity-bg);
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box3 h3 {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .overlaybox-container__title {
   margin: 10px 5%;
 }
-body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box3 p {
+body .Home-container .CartHorizontal-container .CartHorizontal-container__box .overlaybox-container__text {
   width: 60%;
   margin: 0 5%;
 }/*# sourceMappingURL=styles.css.map */
