@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import img from '../media/activity_watch_hw__f42hdrx2vnqm_large.jpg'
 import vid from '../media/medium_2x.mp4'
-import {Transition, CSSTransition, SwitchTransition, TransitionGroup} from "react-transition-group";
-function CartHorizontal(props) {
+import {CSSTransition} from "react-transition-group";
+function CartHorizontal() {
 
   const [activeInfo, setActiveInfo] = useState(false)
   const [open, setOpen] = useState(false)
@@ -27,11 +26,11 @@ function CartHorizontal(props) {
       <div className='box1-container'>
         <h3 className="box1-container__title">Tu compañero de <br /> <span>entrenamiento</span> <br /> perfecto.</h3>
 
-        <div className="box1-container__video-container">
+        <div className="box1-container__media-container">
           <div>
-            <video className='box1-container__video' src={vid} autoPlay></video>
+            <video className='box1-container__media' src={vid} autoPlay></video>
           </div>
-        </div>
+      </div>
 
       </div>
 
