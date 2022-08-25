@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import vid from '../media/medium_2x.mp4'
+
 import {CSSTransition} from "react-transition-group";
-function CartHorizontal() {
+function CartHorizontal(props) {
 
   const [activeInfo, setActiveInfo] = useState(false)
   const [open, setOpen] = useState(false)
@@ -19,16 +19,20 @@ function CartHorizontal() {
   
 
   return (
-    <div className="CartHorizontal-container">
+    <div className={`CartHorizontal-container ${props.identityclass}`}>
 
     <div className="CartHorizontal-container__box">
 
       <div className='box1-container'>
-        <h3 className="box1-container__title">Tu compañero de <br /> <span>entrenamiento</span> <br /> perfecto.</h3>
+        <h3 className="box1-container__title">{props.cartTitle}</h3>
 
         <div className="box1-container__media-container">
           <div>
-            <video className='box1-container__media' src={vid} autoPlay></video>
+            {
+              props.video == undefined
+              ? <img className='box1-container__img' src={props.media} alt="media-card-img"  />
+              : <video className='box1-container__video' src={props.video} autoPlay></video>
+            }
           </div>
       </div>
 
@@ -38,13 +42,13 @@ function CartHorizontal() {
         <div className='box2-container__btn' onClick={()=>setActiveInfo(!activeInfo)}>
           {
             !open
-            ? <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-plus" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round" style={{transform:"rotate(0deg)", transition:"transform 0.5s"}}>
+            ? <svg xmlns="http://www.w3.org/2000/svg" className="icon-close icon-tabler icon-tabler-circle-plus" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke={props.bntStrokeColor} fill="none" strokeLinecap="round" strokeLinejoin="round" style={{transform:"rotate(0deg)", transition:"transform 0.5s"}}>
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <circle cx="12" cy="12" r="9" />
             <line x1="9" y1="12" x2="15" y2="12" />
             <line x1="12" y1="9" x2="12" y2="15" />
           </svg>
-            :<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-plus" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#359048" fill="#ffff" strokeLinecap="round" strokeLinejoin="round" style={{transform:"rotate(-135deg)", transition:"all 0.5s"}}>
+            :<svg xmlns="http://www.w3.org/2000/svg" className="icon-open icon-tabler icon-tabler-circle-plus" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke={props.secondaryColor} fill="#ffff" strokeLinecap="round" strokeLinejoin="round" style={{transform:"rotate(-135deg)", transition:"all 0.5s"}}>
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <circle cx="12" cy="12" r="9" />
             <line x1="9" y1="12" x2="15" y2="12" />
@@ -59,8 +63,8 @@ function CartHorizontal() {
       <CSSTransition in={open} timeout={300} classNames="overlayAnimation" unmountOnExit>
 
       <div className='overlaybox-container'>
-            <h3 className='overlaybox-container__title'>Tu compañero de entrenamiento perfecto.</h3>
-            <p className='overlaybox-container__text'>Los círculos de Actividad te muestran todos tus movimientos del día con tres simples mediciones: Moverse, Ejercicio y Pararse. Además, la app Entrenamiento te permite registrar tus ejercicios de Pilates, Bicicleta, Baile o el que más te guste.</p>
+            <h3 className='overlaybox-container__title'>{props.overlayTitle}</h3>
+            <p className='overlaybox-container__text'>{props.overlayText}</p>
       </div>
 
       </CSSTransition>
