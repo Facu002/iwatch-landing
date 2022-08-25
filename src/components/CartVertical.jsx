@@ -17,12 +17,12 @@ function CartVertical(props) {
     }, [activeInfo])
 
     return (
-    <div className="CartVertical-container">
+    <div className={`CartVertical-container ${props.identityclass}` }>
 
     <div className="CartVertical-container__box">
 
         <div className='box1-container'>
-            <h3 className="box1-container__title">Al <span>agua</span>, <br />como si nada.</h3>
+            <h3 className="box1-container__title">{props.cartTitle}</h3>
 
             <div className="box1-container__media-container">
                 <div>
@@ -55,8 +55,8 @@ function CartVertical(props) {
         <CSSTransition in={open} timeout={300} classNames="overlayAnimation" unmountOnExit>
 
             <div className='overlaybox-container'>
-                <h3 className='overlaybox-container__title'>Al agua, como si nada.</h3>
-                <p className='overlaybox-container__text'>El Apple Watch es resistente al agua hasta 50 metros.2 Sumérgete para llevar un registro de tus entrenamientos en la piscina o incluso trazar un mapa de tu ruta en aguas abiertas.</p>
+                <h3 className='overlaybox-container__title'>{props.overlayTitle}</h3>
+                <p className='overlaybox-container__text'>{props.overlayText}</p>
             </div>
 
         </CSSTransition>
