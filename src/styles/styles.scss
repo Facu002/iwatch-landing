@@ -249,7 +249,7 @@ body{
                                     transform: translate(-50%,-50%);
                                     width: 100%;
                                     height: 100%;
-                                    .box1-container__media{
+                                    .box1-container__img{
                                         width: 100%;
                                         height: 100%;
                                         min-width: 150px;
@@ -338,7 +338,75 @@ body{
                     }
                 }
             }
-            
+            .attention{
+                background-color: var(--black);
+                .CartVertical-container__box{
+                    .box1-container{
+                        &__title{
+                            color: var(--white);
+                            font-size: 30px;
+                            margin: auto 4rem;
+
+                            span{   
+                                color: var(--cyan);
+                            }
+                        }
+                        .box1-container__media-container{
+                            div{
+                                .box1-container__video{
+                                    width: 100%;
+                                    height: 100%;
+                                    min-width: 150px;
+                                    z-index: 2 ;
+                                }
+                            }
+                        }
+                    }
+                    .box2-container{
+                        .icon-close{
+                            stroke: #ffff;
+                        }
+                    }
+                    .overlaybox-container{
+                        background-color: var(--aqua);
+                    }
+                }
+            }
+            .emergency{
+                background-color: var(--lavender-blush);
+                .CartVertical-container__box{
+                    .box1-container{
+                        &__title{
+                            font-size: 30px;
+                            margin: auto 4rem;
+
+                            span{   
+                                color: var(--flamingo);
+                            }
+                        }
+                        .box1-container__media-container{
+                            div{
+                                .box1-container__img{
+                                    width:60%;
+                                    height: 90%;
+                                    max-height: 700px;
+                                    max-width: 400px;
+                                    min-width: 150px;
+                                    z-index: 0 ;
+                                }
+                            }
+                        }
+                    }
+                    .box2-container{
+                        .icon-close{
+                            stroke: #000;
+                        }
+                    }
+                    .overlaybox-container{
+                        background-color: var(--flamingo);
+                    }
+                }
+            }
         }
         .health{
             background-color: var(--snow);
@@ -375,6 +443,8 @@ body{
                 }
             }
         }
+
+
     }
 }
 
@@ -576,7 +646,7 @@ body{
                                         transform: translate(-50%,-50%);
                                         width: 100%;
                                         height: 100%;
-                                        .box1-container__media{
+                                        .box1-container__img{
                                             width: 100%;
                                             height: 100%;
                                             min-width: 150px;
@@ -592,7 +662,7 @@ body{
                             &__btn{
                                 position: absolute;
                                 right: 1rem;
-                                bottom: 0;
+                                bottom: 1rem;
                                 z-index: 5;
                                 border-radius: 50px;
                                 padding: 0;
@@ -625,7 +695,13 @@ body{
                         }    
                     }
                 }
-                
+                .attention{
+                    background-color: var(--black);
+                    color: #ffff;
+                }
+                .emergency{
+                    background-color: var(--lavender-blush);
+                }
             }
             .health{
                 .CartHorizontal-container__box{

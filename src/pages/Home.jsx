@@ -7,6 +7,8 @@ import fitness from '../media/fitness_plus__f4hqazav9quu_medium_2x.jpg'
 import activity from '../media/activity_watch_hw__f42hdrx2vnqm_large.jpg'
 import health from '../media/heart_health__cjye3zyhh42u_medium_2x.jpg'
 import video from '../media/medium_2x.mp4'
+import attention from '../media/medium_2x.2.mp4'
+import emergency from '../media/sos_emergency__dk1t72ehohg2_medium_2x.jpg';
 import CartVertical from '../components/CartVertical'
 function Home() {
     return (
@@ -48,6 +50,22 @@ function Home() {
             overlayTitle={["No pierdas de vista la salud de tu corazón."]}
             overlayText={["Monitorea tu frecuencia cardiaca en cualquier momento con la app Frecuencia Cardiaca y recibe notificaciones cuando esté inusualmente alta o baja."]}
             />
+
+            <div className="Home-container-row">
+                <CartVertical identityclass={"attention"} video={attention}  secondaryColor={"#158D89"}
+                bntStrokeColor={"#fffff"}
+                cartTitle={["Pleno equilibrio", <br />, "con ", <span>Atención <br /> Plena</span>,"."]}
+                overlayTitle={["Pleno equilibrio con Atención Plena."]}
+                overlayText={["La app Atención Plena te ayuda a aliviar el estrés de todos los días, concentrarte mejor y prepararte mentalmente para enfrentar nuevos desafíos. Todo a través de una serie de ejercicios de respiración que invitan a relajarse y encontrar el equilibrio reflexionando sobre un tema simple e inspirador."]}
+                />
+                <CartVertical identityclass={"emergency"} media={emergency}  secondaryColor={"#e45d50"}
+                bntStrokeColor={"#000"}
+                cartTitle={["Pide ", <span>ayuda</span>, <br />,"cuando más", <br />, "la necesitas."]}
+                overlayTitle={["Pide ayuda cuando más la necesitas."]}
+                overlayText={["El Apple Watch SE puede detectar si sufriste una caída fuerte y contactar a los servicios de emergencia en caso de que no puedas moverte.3 Y ahora Detección de Caídas funciona cuando estás usando la app Entrenamiento.4 También puedes recibir asistencia inmediata ante una emergencia, incluso en el extranjero, con sólo mantener presionado el botón lateral.5"]}
+                />
+            </div>
+            
 
         </div>
     )
