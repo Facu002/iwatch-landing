@@ -15,6 +15,7 @@
 --goldenrod: #c67804;
 --bands-accent: #d61739;
 --brick: #ad1f1f;
+--light-orange:#FEF9F5;
 --sk-6-background: #fafafa;
 --black: #000000;
 --white: #ffffff;
@@ -22,11 +23,13 @@
 --activity-bg: #eefbf3;
 --ghost: #f5f5f7;
 --gainsboro: #c7c5c6;
+--light-gold:#FFF9ED;
 --snow: #fff4f4;
 --cyan: #05ece0;
 --aqua: #158D89;
 --lightgreen: #EEFBF3;
 --gray: #747474;
+--light-blue: #EEF9FF;
 --lavender-blush: #fff8ee;
 --alice-blue: #f0fbff;
 --swans-down: #d1eed9;
@@ -35,6 +38,7 @@
 --series-3-bg: #fef8f4;
 --stark: #fff8ed;
 --liver: #fff7f7;
+
 }
 body{
     margin: 0;
@@ -377,9 +381,7 @@ body{
                 .CartVertical-container__box{
                     .box1-container{
                         &__title{
-                            font-size: 30px;
                             margin: auto 4rem;
-
                             span{   
                                 color: var(--flamingo);
                             }
@@ -406,6 +408,149 @@ body{
                         background-color: var(--flamingo);
                     }
                 }
+            }
+            .sleep{
+                background-color: var(--alice-blue);
+                
+                .box2-container{
+                    .icon-close{
+                        stroke: #ffff;
+                    }
+                }
+                .overlaybox-container{
+                    background-color: var(--aqua);
+                }
+            }
+            .call{
+                
+                .CartVertical-container{
+                    &__box{
+                        .box1-container{
+                            border: 1px solid red;
+                            display: flex;
+                            justify-content: center;
+                            background-color: var(--activity-accent);
+                            .box1-container__title{
+                                border: 1px solid red;
+                                text-align: center;
+                                margin: 0 auto;
+                                span{
+                                    color: var(--green);
+                                }
+                            }
+                            .box1-container__media-container{
+                                background-size: cover;
+                                border: 1px solid red;
+                                background-position: center;
+                                display: none;
+                                .box1-container__video{
+                                    width:  100%;
+                                    border: 1px solid red;
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .apps{
+                .box1-container{
+                    &__title{
+                        span{
+                            color: var(--navy);
+                        }
+                    }
+                }
+                .overlaybox-container{
+                    background-color: var(--navy);
+                }
+            }
+            .music{
+                background-color: var(--twilight);
+                .CartVertical-container__box{
+                    .box1-container{
+                        height: 100%;
+                        justify-content: space-between;
+                        &__title{
+                            margin: auto 4rem;
+                            span{   
+                                color: var(--amaranth);
+                            }
+                        }
+                        .box1-container__media-container{
+
+                            div{
+
+                                .box1-container__img{
+
+                                    width:60%;
+                                    height: 100%;
+                                    max-height: 700px;
+                                    max-width: 400px;
+                                    min-width: 150px;
+                                    z-index: 0 ;
+                                }
+                            }
+                        }
+                    }
+                    .box2-container{
+                        .icon-close{
+                            stroke: #000;
+                        }
+                    }
+                    .overlaybox-container{
+                        background-color: var(--amaranth);
+                    }
+                }
+            }
+            .wallpapers{
+                background-color: var(--light-gold) ;
+                .box1-container{
+                    &__title{
+                        span{
+                            color: var(--goldenrod);
+                        }
+                    }
+                    &__media-container{
+                        height: 50%;
+                    }
+                }
+                .overlaybox-container{
+                    background-color: var(--goldenrod);
+                }
+            }
+
+            .straps{
+                .CartVertical-container{
+                    &__box{
+                        .box1-container{
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            background-image: url(../media/bands__dlidpg1ji2oi_large.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            .box1-container__title{
+                                text-align: start;
+                                span{
+                                    color: var(--bands-accent);
+                                }
+                            }
+                            .box1-container__media-container{
+                                background-size: cover;
+                                background-position: center;
+                                display: none;
+                                background-color: none;
+                            }
+                        }
+                        .overlaybox-container{
+                            background-color: var(--bands-accent);
+                        }
+                    }
+                }
+                
             }
         }
         .health{
@@ -444,6 +589,41 @@ body{
             }
         }
 
+        .size{
+            background-color: var(--light-orange);
+            .CartHorizontal-container__box{
+                .box1-container{
+                    justify-content: flex-start;
+                    &__title{
+                        width: 30%;
+                        font-size: 22px;
+                        span{
+                            font-size: 50px;
+                            color: var(--series-3-accent);
+                        }
+                    }
+                    &__media-container{
+                        width: 90%;
+                        max-width: 500px;
+
+                        div{
+                            height: 100%;
+                            width: 100%;
+                            .box1-container__media{
+                                scale: 0;
+                            }
+                        }
+                    }
+                }
+                .overlaybox-container{
+                    background-color: var(--series-3-accent);
+                    .overlaybox-container__title{
+                        width: 65%;
+                        max-width: 550px;
+                    }
+                }
+            }
+        }
 
     }
 }
@@ -622,7 +802,7 @@ body{
                             justify-content: space-evenly;
                             align-items: center;
                             &__title{
-                                font-size: 35px;
+                                font-size: 30px;
                                 font-weight: bolder;
                                 text-align: start;
                                 margin: 0 auto;
@@ -682,7 +862,7 @@ body{
                         height: 100%;
                         width: 100%;
                         border-radius: 40px;
-                        font-size: 18px;
+                        font-size: 14px;
                         color: var(--activity-bg);                
                             &__title{
                             margin: 0 auto;
@@ -698,11 +878,109 @@ body{
                 .attention{
                     background-color: var(--black);
                     color: #ffff;
+                    .box1-container{
+                        &__title{
+                            margin: 1rem;
+                            font-size: 30px;
+                        }
+                    }
                 }
                 .emergency{
                     background-color: var(--lavender-blush);
+                    .box1-container{
+                        &__title{
+                            margin: 1rem;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .sleep{
+                    .box1-container{
+                        height: 100%;
+                        justify-content: space-between;
+                        &__title{
+                            margin: 1rem;
+                            font-size: 30px;
+
+                        }
+                    }
+                }
+                .sleep{
+                    background-color: var(--alice-blue);
+                    .box1-container{
+                        &__title{
+                            margin: 1rem;
+                            font-size: 30px;
+
+                        }
+                    }
+                    .overlaybox-container{
+                        background-color: var(--aqua);
+                    }
+                }
+
+                .apps{
+                    background-color:var(--light-blue);
+                    .box1-container{
+                        justify-content: space-evenly;
+
+                        &__title{
+                            margin: 1rem;
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+                .music{
+                    background-color: var(--twilight);
+                    .box1-container{
+                        justify-content: space-evenly;
+                        margin: 1rem;
+                        &__title{
+                            width: 70%;
+                            font-size: 30px;
+                        }
+                        &__media-container{
+                            height: 90%;
+                            div{
+                                height: 90%;
+                            }
+                        }
+                    }
+                }
+
+                .wallpapers{
+                    .box1-container{
+                        &__title{
+                            span{
+                                color: var(--goldenrod);
+                            }
+                        }
+                        &__media-container{
+                            height: 50%;
+                        }
+                    }
+                    .overlaybox-container{
+                        background-color: var(--goldenrod);
+                    }
+                }
+
+                .straps{
+                
+                    .CartVertical-container{
+                        &__box{
+                            .box1-container{
+                                height: 100%;
+                            }
+                            .overlaybox-container{
+                                background-color: var(--bands-accent) ;
+                            }
+                        }
+                    }
+                    
                 }
             }
+
             .health{
                 .CartHorizontal-container__box{
 
@@ -740,6 +1018,47 @@ body{
                     }
                     .overlaybox-container{
                         background-color: var(--cardinal);
+                    }
+                }
+            }
+
+            .size{
+                .CartHorizontal-container__box{
+                    .box1-container{
+                        height: 100%;
+                        max-height: none;
+                        justify-content: space-between;
+                        .box1-container__title{
+                            font-size: 20px;
+                            margin: 1rem 0;
+                            width: 90%;
+                            span{
+                                font-size: 28px;
+                            }
+                        }
+                        .box1-container__media-container{
+                            width: 100%;
+                            div{
+                                z-index: 0;
+                                display: block;
+                                position: static;
+                                transform: none;
+                                background-image: url(../media/display__fc3v2ldbroi2_small_2x.jpg);
+                                background-position: top;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                .box1-container__img{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .overlaybox-container{
+                        background-color: var(--series-3-accent);
+                        .overlaybox-container__title{
+                            width: 80%;
+                            max-width: 550px;
+                        }
                     }
                 }
             }
