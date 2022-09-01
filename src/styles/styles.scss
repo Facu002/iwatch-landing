@@ -62,11 +62,13 @@ body{
 
             }
         }
+
         &__title{
             width: 100%;
             font-size: 48px;
     
         }
+
         &__subtitle{
             color: var(--gray);
             font-size: 20px;
@@ -74,6 +76,7 @@ body{
             font-weight: 400;
             margin: 0 auto;
         }
+
         .CartHorizontal-container{
             width: 100%;
             background-color: var(--lightgreen);
@@ -181,6 +184,7 @@ body{
                 }        
             }
         }
+
         .water{
             .CartHorizontal-container__box{
                 .box1-container{
@@ -195,6 +199,7 @@ body{
                 }
             }
         }
+
         .activity{
             .CartHorizontal-container__box{
                 .box1-container{
@@ -554,6 +559,7 @@ body{
                 
             }
         }
+
         .health{
             background-color: var(--snow);
             .CartHorizontal-container__box{
@@ -694,6 +700,78 @@ body{
                 }
                 .overlaybox-container{
                     display: none;
+                }
+            }
+        }
+
+        .product-features-container{
+            text-align: left;
+            width: 100%;
+            margin: 1rem auto;
+            &__title{
+                font-size: 30px;
+                width: 80%;
+                margin: 1.5rem auto;
+            }
+            .features-container{
+                text-align: left;
+                display: grid;
+                grid-template-columns: repeat(2,  20rem);
+                grid-row: auto;
+                width: fit-content;
+                gap: 10px;
+                margin: 0 auto;
+                text-align: center;
+                .features-container__item{
+                    width: 20rem;
+                    height: 15rem;
+                    margin: 0 auto;
+                    text-align: left;
+                    p{  
+                        color: var(--gray);
+                        font-weight: 600;
+                        span{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .enviroment-container{
+            background-color: var(--smoke);
+            margin: 1rem 0;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div{
+                width: 80%;
+                height: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .enviroment-container__img{
+                    height: 50px;
+
+                }
+                .enviroment-container__title{
+                    color: var(--activity-accent);
+                    font-size: 35px;
+
+                }
+                .enviroment-container__text{
+                    width: 90%;
+                    margin: 0 auto;
+
+                }
+                .enviroment-container__link{
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: var(--navy);
+                    margin: 1rem;
                 }
             }
         }
@@ -1168,11 +1246,9 @@ body{
 
                     .box1-container{
                         height: 100%;
-                        border: 1px solid red;
                         justify-content: space-between;
                         &__title{
                             font-size: 15px;
-                            border: 1px solid red;
                             width: 80%;
                             text-align: center;
                             margin: 4rem auto;
@@ -1185,20 +1261,17 @@ body{
                             max-width: none;
                             height: 60%;
                             position: relative;
-                            border: 1px solid red;
                             transform: none;
                             margin: 0 auto;
                             div{
                                 position: initial;
                                 width: 100%;
-                                border: 1px solid red;
                                 transform: none;
                                 height: 100%;
                                 .box1-container__media{
                                     width: 100%;
                                     min-width: 150px;
                                     z-index: 2 ;
-                                    border: 1px solid blue;
                                     opacity: 0;
                                 }
                             }
@@ -1207,6 +1280,42 @@ body{
                     .overlaybox-container{
                         background-color: var(--cardinal);
                     }
+                }
+            }
+            .product-features-container{
+                &__title{
+                    font-size: 30px;
+                    width: fit-content;
+                }
+                .features-container{
+                    text-align: left;
+                    display: grid;
+                    grid-template-columns: repeat(1,  0.8fr);
+                    grid-row: auto;
+                    width: fit-content;
+                    gap: 10px;
+                    margin: 0 auto;
+                    text-align: center;
+                    .features-container__item{
+                        width: 20rem;
+                        height: 15rem;
+                        margin: 0 auto;
+                        text-align: center;
+                        p{  
+                            color: var(--gray);
+                            font-weight: 600;
+                            span{
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+            .enviroment-container{
+                height: 65vh;
+                div{
+                    width: 80%;
+                    height: 60%;
                 }
             }
         }

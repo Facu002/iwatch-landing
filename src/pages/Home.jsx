@@ -18,7 +18,8 @@ import wallpapers from '../media/face__c1ozrzp4a14y_medium_2x.jpg'
 import finish from '../media/finishes__e0d0gjyxbnu6_medium_2x.jpg'
 import vr from '../media/ar_tile_se__dvgrg7uqy1si_medium_2x.jpg'
 
-
+import ProductFeatures from '../components/ProductFeatures'
+import Enviroment from '../components/Enviroment'
 import CartVertical from '../components/CartVertical'
 function Home() {
     return (
@@ -138,6 +139,10 @@ function Home() {
             overlayTitle={["Dos tamaños. Tres acabados. Infinitas razones para quererlo."]}
             overlayText={["El Apple Watch SE viene con cajas de 44 mm o 40 mm. Escoge entre color plata, color oro o gris espacial. Todos en aluminio 100% reciclado. "]}
             />
+
+            <ProductFeatures />
+
+            <Enviroment />
 
         </div>
     )
