@@ -15,6 +15,8 @@ import apps from '../media/apps__enhifa2rkwia_medium_2x.jpg'
 import music from '../media/music__bexc5op9pktu_medium_2x.jpg'
 import size from '../media/display__fc3v2ldbroi2_medium_2x.jpg'
 import wallpapers from '../media/face__c1ozrzp4a14y_medium_2x.jpg'
+import finish from '../media/finishes__e0d0gjyxbnu6_medium_2x.jpg'
+import vr from '../media/ar_tile_se__dvgrg7uqy1si_medium_2x.jpg'
 
 
 import CartVertical from '../components/CartVertical'
@@ -128,6 +130,14 @@ function Home() {
                 overlayText={["Las correas del Apple Watch fueron diseñadas para que puedas intercambiarlas fácilmente. Con una gran variedad de estilos y colores a tu disposición, puedes cambiar tu look en cuestión de segundos."]}
                 />
             </div>
+
+            <CartHorizontal
+            identityclass={"virtualReality"} media={vr} secondaryColor={"#AD1F1F"}
+            bntStrokeColor={"#000"}
+            cartTitle={[ <span>Mira el Apple Watch SE <br /> con realidad aumentada. </span>,<br /> , "Abre esta página con Safari",<br /> , "en tu iPhone o iPad."]}
+            overlayTitle={["Dos tamaños. Tres acabados. Infinitas razones para quererlo."]}
+            overlayText={["El Apple Watch SE viene con cajas de 44 mm o 40 mm. Escoge entre color plata, color oro o gris espacial. Todos en aluminio 100% reciclado. "]}
+            />
 
         </div>
     )
