@@ -525,15 +525,13 @@ body{
             }
             .call{
                 
-                .CartVertical-container{
-                    &__box{
+                .CartVertical-container__box{
                         .box1-container{
-                            border: 1px solid red;
                             display: flex;
                             justify-content: center;
-                            background-color: var(--activity-accent);
+                            background-image: url(../media/freedomcall.jpg);
+                            background-position: center;
                             .box1-container__title{
-                                border: 1px solid red;
                                 text-align: center;
                                 margin: 0 auto;
                                 span{
@@ -541,18 +539,9 @@ body{
                                 }
                             }
                             .box1-container__media-container{
-                                background-size: cover;
-                                border: 1px solid red;
-                                background-position: center;
                                 display: none;
-                                .box1-container__video{
-                                    width:  100%;
-                                    border: 1px solid red;
-                                    display: none;
-                                }
                             }
                         }
-                    }
                 }
                 
             }
@@ -1022,8 +1011,6 @@ body{
                 ul{
                     padding: 0;
                     margin: 0;
-                    border: 1px solid red;
-                    
                     li{
                         width: 70%;
                         margin: 0.5rem auto;
@@ -1256,7 +1243,7 @@ body{
                         align-items: center;
 
                         &__title{
-                            font-size: 35px;
+                            font-size: 30px;
                             font-weight: bolder;
                             text-align: start;
                             margin: 0;
@@ -1493,6 +1480,13 @@ body{
                     }
                 }
 
+                .call{
+                    .CartVertical-container__box{
+                        .box1-container{
+                            height: 100%;
+                        }
+                    }
+                }
                 .music{
                     background-color: var(--twilight);
                     .box1-container{

@@ -10,7 +10,7 @@ import video from '../media/medium_2x.mp4'
 import attention from '../media/medium_2x.2.mp4'
 import emergency from '../media/sos_emergency__dk1t72ehohg2_medium_2x.jpg';
 import sleep from '../media/sleep__gdehfkynp722_medium_2x.jpg'
-import call from '../media/bg1.mp4'
+import call from '../media/freedomcall.jpg'
 import apps from '../media/apps__enhifa2rkwia_medium_2x.jpg'
 import music from '../media/music__bexc5op9pktu_medium_2x.jpg'
 import size from '../media/display__fc3v2ldbroi2_medium_2x.jpg'
@@ -84,7 +84,7 @@ function Home() {
                 overlayTitle={["Está pendiente de ti. Día y noche."]}
                 overlayText={["La app Sueño trabaja con el iPhone para monitorear tu descanso y ayudarte a crear una rutina para ir a dormir. Así podrás descansar el tiempo que necesitas. Y además podrás revisar tus tendencias para ver si estás cumpliendo tus metas."]}
                 />
-                <CartVertical identityclass={"call"} video={call}  secondaryColor={"#158D89"}
+                <CartVertical identityclass={"call"} media={call}  secondaryColor={"#158D89"}
                 bntStrokeColor={"#fffff"}
                 cartTitle={["La libertad te", <br />, "está ", <span>llamando</span>,"."]}
                 overlayTitle={["Pleno equilibrio con Atención Plena."]}

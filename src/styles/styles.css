@@ -452,13 +452,12 @@ body .Home-container .Home-container-row .sleep .overlaybox-container {
   background-color: var(--aqua);
 }
 body .Home-container .Home-container-row .call .CartVertical-container__box .box1-container {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
-  background-color: var(--activity-accent);
+  background-image: url(../media/freedomcall.jpg);
+  background-position: center;
 }
 body .Home-container .Home-container-row .call .CartVertical-container__box .box1-container .box1-container__title {
-  border: 1px solid red;
   text-align: center;
   margin: 0 auto;
 }
@@ -466,14 +465,6 @@ body .Home-container .Home-container-row .call .CartVertical-container__box .box
   color: var(--green);
 }
 body .Home-container .Home-container-row .call .CartVertical-container__box .box1-container .box1-container__media-container {
-  background-size: cover;
-  border: 1px solid red;
-  background-position: center;
-  display: none;
-}
-body .Home-container .Home-container-row .call .CartVertical-container__box .box1-container .box1-container__media-container .box1-container__video {
-  width: 100%;
-  border: 1px solid red;
   display: none;
 }
 body .Home-container .Home-container-row .apps .box1-container__title span {
@@ -876,7 +867,6 @@ body .Nav-container .first-nav__mobile .menu-btn__burger::after {
   body .Nav-container .drop-open ul {
     padding: 0;
     margin: 0;
-    border: 1px solid red;
   }
   body .Nav-container .drop-open ul li {
     width: 70%;
@@ -1091,7 +1081,7 @@ body .second-nav .nav__mobile-top div .true::after {
     align-items: center;
   }
   body .Home-container .CartHorizontal-container .CartHorizontal-container__box .box1-container__title {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
     text-align: start;
     margin: 0;
@@ -1303,6 +1293,9 @@ body .second-nav .nav__mobile-top div .true::after {
   body .Home-container .Home-container-row .apps .box1-container__title {
     margin: 1rem;
     font-size: 30px;
+  }
+  body .Home-container .Home-container-row .call .CartVertical-container__box .box1-container {
+    height: 100%;
   }
   body .Home-container .Home-container-row .music {
     background-color: var(--twilight);
