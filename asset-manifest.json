@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/iwatch-landing/static/css/main.0336b914.css",
+    "main.js": "/iwatch-landing/static/js/main.76d33cbb.js",
+    "static/media/small_2x.mp4": "/iwatch-landing/static/media/small_2x.d99c0dad85efd438d87c.mp4",
+    "static/media/medium_2x.2.mp4": "/iwatch-landing/static/media/medium_2x.2.a148c7bfa1df341016b0.mp4",
+    "static/media/medium_2x.mp4": "/iwatch-landing/static/media/medium_2x.59e190cb38014e0d70c1.mp4",
+    "static/media/finishes__e0d0gjyxbnu6_medium_2x.jpg": "/iwatch-landing/static/media/finishes__e0d0gjyxbnu6_medium_2x.b7f735107da2560c3062.jpg",
+    "static/media/display__fc3v2ldbroi2_medium_2x.jpg": "/iwatch-landing/static/media/display__fc3v2ldbroi2_medium_2x.79de0a644233aae4f909.jpg",
+    "static/media/freedomcall.jpg": "/iwatch-landing/static/media/freedomcall.c0751f45405937c986fb.jpg",
+    "static/media/bands__dlidpg1ji2oi_large.jpg": "/iwatch-landing/static/media/bands__dlidpg1ji2oi_large.c531fb10462eadeef4bc.jpg",
+    "static/media/sos_emergency__dk1t72ehohg2_medium_2x.jpg": "/iwatch-landing/static/media/sos_emergency__dk1t72ehohg2_medium_2x.a568a38f3a30999638d3.jpg",
+    "static/media/water__cnq38qvnj9jm_medium_2x.jpg": "/iwatch-landing/static/media/water__cnq38qvnj9jm_medium_2x.27ad67b8cc607bec3fea.jpg",
+    "static/media/ar_tile_se__dvgrg7uqy1si_medium_2x.jpg": "/iwatch-landing/static/media/ar_tile_se__dvgrg7uqy1si_medium_2x.fdaff234b769609d4ca7.jpg",
+    "static/media/display__fc3v2ldbroi2_small_2x.jpg": "/iwatch-landing/static/media/display__fc3v2ldbroi2_small_2x.ce764d1033ef874ee3b1.jpg",
+    "static/media/apps__enhifa2rkwia_medium_2x.jpg": "/iwatch-landing/static/media/apps__enhifa2rkwia_medium_2x.4dc453784e58a5314041.jpg",
+    "static/media/music__bexc5op9pktu_medium_2x.jpg": "/iwatch-landing/static/media/music__bexc5op9pktu_medium_2x.8d46b07ddfdd5df78791.jpg",
+    "static/media/finishes__e0d0gjyxbnu6_small_2x.jpg": "/iwatch-landing/static/media/finishes__e0d0gjyxbnu6_small_2x.bef48bb19fbe3530719a.jpg",
+    "static/media/heart_health__cjye3zyhh42u_medium_2x.jpg": "/iwatch-landing/static/media/heart_health__cjye3zyhh42u_medium_2x.5728b231e072f5a6421f.jpg",
+    "static/media/face__c1ozrzp4a14y_medium_2x.jpg": "/iwatch-landing/static/media/face__c1ozrzp4a14y_medium_2x.9db705c7e506bf54ca25.jpg",
+    "static/media/sleep__gdehfkynp722_medium_2x.jpg": "/iwatch-landing/static/media/sleep__gdehfkynp722_medium_2x.d5ecfe856c40ded217c2.jpg",
+    "static/media/activity_watch_hw__f42hdrx2vnqm_large.jpg": "/iwatch-landing/static/media/activity_watch_hw__f42hdrx2vnqm_large.787ae69563b3ba1c830a.jpg",
+    "static/media/fitness_plus__f4hqazav9quu_medium_2x.jpg": "/iwatch-landing/static/media/fitness_plus__f4hqazav9quu_medium_2x.c65084d88afd55e730cc.jpg",
+    "static/media/heart_health__cjye3zyhh42u_small_2x.jpg": "/iwatch-landing/static/media/heart_health__cjye3zyhh42u_small_2x.c0bc75ddf298815ec495.jpg",
+    "index.html": "/iwatch-landing/index.html",
+    "main.0336b914.css.map": "/iwatch-landing/static/css/main.0336b914.css.map",
+    "main.76d33cbb.js.map": "/iwatch-landing/static/js/main.76d33cbb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0336b914.css",
+    "static/js/main.76d33cbb.js"
+  ]
+}
