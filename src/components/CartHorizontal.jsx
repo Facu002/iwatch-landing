@@ -29,7 +29,7 @@ function CartHorizontal(props) {
         <div className="box1-container__media-container">
           <div>
             {
-              props.video == undefined
+              props.video === undefined
               ? <img className='box1-container__img' src={props.media} alt="media-card-img"  />
               : <video className='box1-container__video' src={props.video} autoPlay></video>
             }

@@ -8,15 +8,17 @@ function ProductNav() {
         <div className='second-nav'>
             <h1>Apple Watch SE</h1>
             <div>
-                <a href="#">Descripción</a>
-                <a href="#">Por qué Apple Watch</a>
+                <a href="/">Descripción</a>
+                <a href="/">Por qué Apple Watch</a>
+                {/* <button c>Descripción</button>
+                <button c>Por qué buttonpple Watch</button> */}
                 <button className='second-nav_btn'>Comprar</button>
             </div>
         </div>
         <div className='second-nav second-nav__mobile'>
             
             {
-                menuOpen == true
+                menuOpen === true
                 ? <>
                     <div className="nav__mobile-top">
                         <h1>Apple Watch SE</h1>
