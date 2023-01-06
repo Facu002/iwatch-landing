@@ -1301,6 +1301,7 @@ body .second-nav .nav__mobile-top div .true::after {
   body .Home-container .Home-container-row .music .box1-container {
     justify-content: space-evenly;
     margin: 1rem;
+    background-color: var(--twilight);
   }
   body .Home-container .Home-container-row .music .box1-container__title {
     width: 70%;
@@ -1310,6 +1311,12 @@ body .second-nav .nav__mobile-top div .true::after {
   }
   body .Home-container .Home-container-row .music .box1-container__media-container div {
     height: 90%;
+  }
+  body .Home-container .Home-container-row .wallpapers {
+    background-color: var(--light-gold);
+  }
+  body .Home-container .Home-container-row .wallpapers .box1-container {
+    background-color: var(--light-gold);
   }
   body .Home-container .Home-container-row .wallpapers .box1-container__title span {
     color: var(--goldenrod);
@@ -1772,6 +1779,9 @@ body .second-nav .nav__mobile-top div .true::after {
   body .Home-container .Home-container-row .call .CartVertical-container__box .box1-container {
     height: 100%;
   }
+  body .Home-container .Home-container-row .music {
+    background-color: var(--twilight);
+  }
   body .Home-container .Home-container-row .music .CartVertical-container__box .box1-container {
     height: 90%;
     justify-content: space-between;
@@ -1789,6 +1799,9 @@ body .second-nav .nav__mobile-top div .true::after {
     max-width: 400px;
     min-width: 150px;
     z-index: 0;
+  }
+  body .Home-container .Home-container-row .wallpapers {
+    background-color: var(--light-gold);
   }
   body .Home-container .Home-container-row .wallpapers .box1-container__title span {
     color: var(--goldenrod);

@@ -4,7 +4,7 @@ import heroLogo from '../media/hero_logo__bvtwdsrn2mvm_medium.png'
 function Banner() {
     return (
         <div className='Banner-container'>
-            <video className='Banner-container__videoHero' src={video} autoPlay></video>
+            <video  playsinline autoplay loop muted  defaultMuted autoPlay className='Banner-container__videoHero' src={video}></video>
             <img className='Banner-container__logoHero' src={heroLogo} alt="heroLogo" />
         </div>
     )
